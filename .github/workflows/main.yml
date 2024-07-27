@@ -76,7 +76,7 @@ jobs:
           plugin_anilist_limit: 2
 
       - name: Favorites characters
-        uses: lansoniikun/metrics@master
+        uses: ansoniikun/metrics@master
         with:
           filename: metrics.plugin.anilist.characters.svg
           token: NOT_NEEDED
