@@ -15,10 +15,12 @@ jobs:
       contents: write
     steps:
     
-    - name: Current year calendar
+    - name: Example
       uses: ansoniikun/metrics@master
       with:
-        filename: metrics.plugin.calendar.svg
+        filename: metrics.classic.svg
         token: ${{ secrets.METRICS_TOKEN }}
-        base: ""
-        plugin_calendar: yes
+        base: header, repositories
+        plugin_lines: yes
+
+
