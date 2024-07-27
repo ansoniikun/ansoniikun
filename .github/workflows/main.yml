@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: 🦑 General
         if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
+        uses: ansoniikun/metrics@master
         with:
           filename: general.svg
           token: ${{ secrets.METRICS_TOKEN }}
