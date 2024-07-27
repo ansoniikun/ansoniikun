@@ -19,4 +19,54 @@ jobs:
         base: header, repositories
         plugin_lines: yes
 
+    - name: Compact display
+      uses: ansoniikun/metrics@master
+      with:
+        filename: metrics.plugin.achievements.compact.svg
+        token: ${{ secrets.METRICS_TOKEN }}
+        base: ""
+        plugin_achievements: yes
+        plugin_achievements_only: >-
+          polyglot, stargazer, sponsor, deployer, member, maintainer, developer,
+          scripter, packager, explorer, infographile, manager
+        plugin_achievements_display: compact
+        plugin_achievements_threshold: X
+        
+    - name: Icons
+      uses: ansoniikun/metrics@master
+      with:
+        filename: metrics.plugin.topics.icons.svg
+        token: NOT_NEEDED
+        base: ""
+        plugin_topics: yes
+        plugin_topics_limit: 0
+        plugin_topics_mode: icons
+
+    - name: Favorites anime and currently watching
+      uses: ansoniikun/metrics@master
+      with:
+        filename: metrics.plugin.anilist.svg
+        token: NOT_NEEDED
+        base: ""
+        plugin_anilist: yes
+        plugin_anilist_medias: anime
+        plugin_anilist_sections: favorites
+        plugin_anilist_limit: 2
+        
+    - name: Favorites characters
+      uses: ansoniikun/metrics@master
+      with:
+        filename: metrics.plugin.anilist.characters.svg
+        token: NOT_NEEDED
+        base: ""
+        plugin_anilist: yes
+        plugin_anilist_sections: characters
+        plugin_anilist_limit_characters: 22
+
+
+
+      
+
+
+
 
