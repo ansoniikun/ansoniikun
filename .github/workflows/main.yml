@@ -64,25 +64,20 @@ jobs:
           plugin_achievements_display: compact
           plugin_achievements_threshold: X
 
-      - name: Favorites anime and currently watching
-        uses: ansoniikun/metrics@master
+      - name: 🦑 Medias
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.anilist.svg
-          token: NOT_NEEDED
+          filename: medias.svg
+          token: ${{ secrets.TOKEN }}
           base: ""
+          config_order: anilist
+          output_action: gist
+          committer_gist: ${{ secrets.GIST }}
           plugin_anilist: yes
           plugin_anilist_medias: anime
-          plugin_anilist_sections: favorites
+          plugin_anilist_sections: favorites, characters
           plugin_anilist_limit: 2
-
-      - name: Favorites characters
-        uses: ansoniikun/metrics@master
-        with:
-          filename: metrics.plugin.anilist.characters.svg
-          token: NOT_NEEDED
-          base: ""
-          plugin_anilist: yes
-          plugin_anilist_sections: characters
           plugin_anilist_limit_characters: 22
 
 
