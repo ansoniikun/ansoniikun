@@ -1,4 +1,4 @@
-# Hi there, I'm Hlompho 👋
+# Hi there, I'm Anthony 👋
 
 > I'm an aspiring full-stack developer | AI & robotics enthusiast\
 > Join me on my development journey, let's create great programs and good memories
