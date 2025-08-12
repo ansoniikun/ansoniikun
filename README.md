@@ -1,4 +1,4 @@
-# Hi there, I'm Hlompho 👋
+
 
 > Software developer | AI & robotics enthusiast\
 >
